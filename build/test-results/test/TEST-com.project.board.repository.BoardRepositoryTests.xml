@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.project.board.repository.BoardRepositoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-12T14:12:50" hostname="hyeon-iui-MacBookAir.local" time="0.386">
+<testsuite name="com.project.board.repository.BoardRepositoryTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-12-13T07:56:09" hostname="hyeon-iui-MacBookAir.local" time="0.503">
   <properties/>
-  <testcase name="testUpdate()" classname="com.project.board.repository.BoardRepositoryTests" time="0.386"/>
-  <system-out><![CDATA[23:12:47.406 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.project.board.repository.BoardRepositoryTests]: BoardRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:12:47.475 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.project.board.BoardApplication for test class com.project.board.repository.BoardRepositoryTests
+  <testcase name="setup()" classname="com.project.board.repository.BoardRepositoryTests" time="0.404"/>
+  <testcase name="testDelete()" classname="com.project.board.repository.BoardRepositoryTests" time="0.06"/>
+  <testcase name="testInsert()" classname="com.project.board.repository.BoardRepositoryTests" time="0.026"/>
+  <testcase name="testUpdate()" classname="com.project.board.repository.BoardRepositoryTests" time="0.012"/>
+  <system-out><![CDATA[16:56:06.408 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.project.board.repository.BoardRepositoryTests]: BoardRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:56:06.478 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.project.board.BoardApplication for test class com.project.board.repository.BoardRepositoryTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,18 +17,18 @@
 
  :: Spring Boot ::                (v3.4.0)
 
-2024-12-12T23:12:47.715+09:00  INFO 85563 --- [board] [    Test worker] c.p.b.repository.BoardRepositoryTests    : Starting BoardRepositoryTests using Java 17.0.8 with PID 85563 (started by hyeon-i in /Users/hyeon-i/Desktop/IntelliJ_All_Main/board)
-2024-12-12T23:12:47.716+09:00  INFO 85563 --- [board] [    Test worker] c.p.b.repository.BoardRepositoryTests    : No active profile set, falling back to 1 default profile: "default"
-2024-12-12T23:12:48.072+09:00  INFO 85563 --- [board] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-12-12T23:12:48.107+09:00  INFO 85563 --- [board] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
-2024-12-12T23:12:48.342+09:00  INFO 85563 --- [board] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-12-12T23:12:48.373+09:00  INFO 85563 --- [board] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2024-12-12T23:12:48.394+09:00  INFO 85563 --- [board] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-12-12T23:12:48.556+09:00  INFO 85563 --- [board] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-12-12T23:12:48.572+09:00  INFO 85563 --- [board] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-12T23:12:48.621+09:00  INFO 85563 --- [board] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@42ff9a77
-2024-12-12T23:12:48.622+09:00  INFO 85563 --- [board] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-12T23:12:48.659+09:00  INFO 85563 --- [board] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2024-12-13T16:56:06.708+09:00  INFO 89303 --- [board] [    Test worker] c.p.b.repository.BoardRepositoryTests    : Starting BoardRepositoryTests using Java 17.0.8 with PID 89303 (started by hyeon-i in /Users/hyeon-i/Desktop/IntelliJ_All_Main/board)
+2024-12-13T16:56:06.709+09:00  INFO 89303 --- [board] [    Test worker] c.p.b.repository.BoardRepositoryTests    : No active profile set, falling back to 1 default profile: "default"
+2024-12-13T16:56:07.082+09:00  INFO 89303 --- [board] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13T16:56:07.118+09:00  INFO 89303 --- [board] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2024-12-13T16:56:07.368+09:00  INFO 89303 --- [board] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13T16:56:07.404+09:00  INFO 89303 --- [board] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-13T16:56:07.426+09:00  INFO 89303 --- [board] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-13T16:56:07.589+09:00  INFO 89303 --- [board] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13T16:56:07.607+09:00  INFO 89303 --- [board] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-13T16:56:07.674+09:00  INFO 89303 --- [board] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@17d2b646
+2024-12-13T16:56:07.675+09:00  INFO 89303 --- [board] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-13T16:56:07.713+09:00  INFO 89303 --- [board] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 11.6.2
@@ -33,12 +36,193 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-12-12T23:12:49.134+09:00  INFO 85563 --- [board] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-12-12T23:12:49.165+09:00  INFO 85563 --- [board] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-12-12T23:12:49.297+09:00  INFO 85563 --- [board] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-12-12T23:12:49.834+09:00  WARN 85563 --- [board] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-12-12T23:12:49.851+09:00  INFO 85563 --- [board] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-12-12T23:12:50.078+09:00  INFO 85563 --- [board] [    Test worker] c.p.b.repository.BoardRepositoryTests    : Started BoardRepositoryTests in 2.519 seconds (process running for 3.244)
+2024-12-13T16:56:08.204+09:00  INFO 89303 --- [board] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-13T16:56:08.256+09:00  INFO 89303 --- [board] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13T16:56:08.394+09:00  INFO 89303 --- [board] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-13T16:56:08.864+09:00  WARN 89303 --- [board] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13T16:56:08.882+09:00  INFO 89303 --- [board] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-12-13T16:56:09.110+09:00  INFO 89303 --- [board] [    Test worker] c.p.b.repository.BoardRepositoryTests    : Started BoardRepositoryTests in 2.549 seconds (process running for 3.245)
+Hibernate: 
+    select
+        m1_0.email,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    select
+        null,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    insert 
+    into
+        tbl_board
+        (content, moddate, regdate, title, writer_email) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.email,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    select
+        null,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    insert 
+    into
+        tbl_board
+        (content, moddate, regdate, title, writer_email) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.email,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    select
+        null,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    insert 
+    into
+        tbl_board
+        (content, moddate, regdate, title, writer_email) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.moddate,
+        b1_0.regdate,
+        b1_0.title,
+        b1_0.writer_email 
+    from
+        tbl_board b1_0 
+    where
+        b1_0.bno=?
+Hibernate: 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.moddate,
+        b1_0.regdate,
+        b1_0.title,
+        b1_0.writer_email 
+    from
+        tbl_board b1_0 
+    where
+        b1_0.bno=?
+Hibernate: 
+    select
+        b1_0.bno,
+        b1_0.content,
+        b1_0.moddate,
+        b1_0.regdate,
+        b1_0.title,
+        b1_0.writer_email 
+    from
+        tbl_board b1_0 
+    where
+        b1_0.bno=?
+Hibernate: 
+    select
+        m1_0.email,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    select
+        null,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    insert 
+    into
+        tbl_board
+        (content, moddate, regdate, title, writer_email) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.email,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    select
+        null,
+        m1_0.moddate,
+        m1_0.name,
+        m1_0.password,
+        m1_0.regdate 
+    from
+        tbl_member m1_0 
+    where
+        m1_0.email=?
+Hibernate: 
+    insert 
+    into
+        tbl_board
+        (content, moddate, regdate, title, writer_email) 
+    values
+        (?, ?, ?, ?, ?)
 Hibernate: 
     select
         m1_0.email,
